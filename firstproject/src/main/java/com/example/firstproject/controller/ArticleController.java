@@ -16,6 +16,7 @@ public class ArticleController {
     public String newArticleForm(){
         return "articles/new";
     }
+
     @PostMapping("/articles/create")
     public String createArticle(ArticleFrom form){
         System.out.println(form.toString());
